@@ -23,5 +23,31 @@
             <artifactId>linsir-cloud-auth-api</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.linsir</groupId>
+            <artifactId>linsir-cloud-saas-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.linsir</groupId>
+            <artifactId>linsir-starter-redis</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- Sa-Token 权限认证, 在线文档：https://sa-token.cc -->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-spring-boot3-starter</artifactId>
+            <version>1.38.0</version>
+        </dependency>
+
+        <!-- Sa-Token-OAuth2.0 模块 -->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-oauth2</artifactId>
+            <version>1.38.0</version>
+        </dependency>
     </dependencies>
 </project>

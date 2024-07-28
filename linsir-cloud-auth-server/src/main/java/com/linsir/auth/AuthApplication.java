@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication(scanBasePackages="com.linsir")
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients(basePackages = {"com.linsir.saas.feign"})
 public class AuthApplication {
 
     public static void main(String[] args) {
