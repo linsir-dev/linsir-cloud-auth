@@ -24,5 +24,10 @@
             <artifactId>linsir-starter-cloud</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.linsir</groupId>
+            <artifactId>linsir-cloud-saas-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 </project>
