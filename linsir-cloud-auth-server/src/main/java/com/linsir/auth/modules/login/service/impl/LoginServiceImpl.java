@@ -98,9 +98,10 @@ public class LoginServiceImpl implements LoginService {
 
 
     @Override
-    public TokenVO saasLogin(LoginParams loginParams) {
+    public TokenVO saasLogin(LoginData loginData) {
         TokenVO tokenVO = new TokenVO();
-        if (login(loginParams.getUsername(), loginParams.getPassword())) {
+        if (captchaService.checkCaptcha(loginData.getCaptchaKey(), loginData.getCaptchaCode()) &&
+                login(loginData.getUsername(), loginData.getPassword())) {
             tokenVO = getToken();
         }
         return tokenVO;

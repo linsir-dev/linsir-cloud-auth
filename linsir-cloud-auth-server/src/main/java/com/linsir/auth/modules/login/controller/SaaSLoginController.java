@@ -1,5 +1,6 @@
 package com.linsir.auth.modules.login.controller;
 
+import com.linsir.modules.login.dto.LoginData;
 import com.linsir.modules.login.dto.LoginParams;
 import com.linsir.auth.modules.login.service.LoginService;
 import com.linsir.base.core.vo.jsonResults.JsonResult;
@@ -22,10 +23,18 @@ public class SaaSLoginController extends LoginController{
     @Autowired
     private LoginService loginService;
 
+
+    /**
+     * @description SaaS 登录
+     * @author Linsir
+     * @param  loginData
+     * @return com.linsir.base.core.vo.results.R
+     * @time 2024/8/18 8:17
+     */
     @PostMapping("login")
-    public R login(@RequestBody LoginParams loginParams) throws Exception {
+    public R login(LoginData loginData) throws Exception {
         return exec("saas登录",()->{
-           return JsonResult.OK(loginService.saasLogin(loginParams));
+           return JsonResult.OK(loginService.saasLogin(loginData));
         });
     }
 

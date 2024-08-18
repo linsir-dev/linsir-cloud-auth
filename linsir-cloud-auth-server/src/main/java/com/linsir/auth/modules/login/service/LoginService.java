@@ -79,11 +79,11 @@ public interface LoginService {
      /**
       * @description saas 服务登录
       * @author Linsir
-      * @param  loginParams
+      * @param  loginData
       * @return com.linsir.modules.login.vo.TokenVO
       * @time 2024/8/5 19:08
       */
-     TokenVO saasLogin(LoginParams loginParams);
+     TokenVO saasLogin(LoginData loginData);
 
 
      /**
